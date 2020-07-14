@@ -1,0 +1,30 @@
+
+body {
+  background-color: #333;
+}
+p {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+#image {
+  display: none;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.vueCarte{
+  display: flex; 
+  flex-direction: column;
+  width: 770px;
+  height: 769px;
+  left: 30%;
+  position: relative;
+}
