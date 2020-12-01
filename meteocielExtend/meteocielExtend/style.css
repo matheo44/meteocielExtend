@@ -1,0 +1,146 @@
+
+body {
+  background-color: #333;
+  /* background: linear-gradient(#387688, white);   */
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px;
+}
+
+header{
+  background-image: url(https://www.progres.net.eg/Upload/News/3-5-2020_13_49_01_Progres_soleil_V.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Calligraffitti';
+  font-size: large;
+  height: 150px;
+  border-bottom:  blue groove;
+}
+a{
+  text-decoration: none;
+
+}
+.right{
+  position: absolute;
+  right: 300px;
+}
+
+.left{
+  position: absolute;
+  left: 200px;
+}
+
+.right-bottom{
+  position: relative;
+  right: -100px;
+}
+
+
+p {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+#image {
+  display: none;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.vueCarte{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  left: 10%;
+  margin-top: 5%;
+  width: 80%;
+  height: 100%;
+  background-color: goldenrod;
+  
+}
+.contnair-nav{
+  position: relative;
+  background-color: #330;
+  top: 0px;
+  left: 5%;
+  width: 200px;
+  height: 700px;
+  border: groove #97BEDD;
+  
+}
+nav{
+  position: relative;
+  top: 100px;
+}
+.carte-space{
+  position: absolute;
+  margin-top: -708px;
+  left: 30%;
+  width: 60%;
+  height: 1000px;
+  border: solid blue;
+  background-color: #340;
+  /* #EBFAF7 */
+}
+@media all and (max-width: 940px) { 
+  .contnair-nav{
+    position: relative;
+    background-color: #330;
+    top: 0px;
+    left: 2%;
+    width: 200px;
+    height: 700px;
+    border: groove #97BEDD;
+  }
+  .vueCarte{
+    width: 100%;
+    left: 0px;
+
+  }
+  
+}
+@media all and (max-width: 790px){
+  .carte-space{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: -708px;
+    left: 230px;
+    width: 402px;
+    height: 402px;
+    background-color: green;
+   
+  }
+  .contnair-nav{
+    left: 16px;
+  }
+}
+@media all and (max-width: 1080px){
+  .left{
+    position: absolute;
+    left: 5%;
+    color: cyan;
+  }
+  .right{
+    position: absolute;
+    right: 100px;
+  }
+  .right-bottom{
+    position: absolute;
+    left: 100px;
+  }
+  
+}
+@media all and (max-width: 670px){
+  .right{
+    left: 200px;
+  }
+  
+}

@@ -1,0 +1,42 @@
+ 
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>météocielExtend</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3.0.2/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>  
+      <h1 class="left"><a href="https://www.meteociel.fr/"> Meteociel..fr</a></h1> 
+      <h1 class="right">Obsevation, Prévision, <br>
+      <span class="right-bottom"> Modèle en temps réel</span></h1> 
+    </header>
+    
+      <div id="App">
+        <div class="space-util">
+          <div class="contnair-nav">
+            <div v-for="image in images">
+              <input type="checkbox" v-model="image.selected">
+              <label for="checkbox">{{image.key}}</label><br/>
+              <span>{{ image.selected ? 'Selected' : '' }}</span>
+        
+            </div>
+          </div>
+        <div class="carte-space" v-for="image in images">
+        <div v-if="image.selected">
+            <img v-bind:src="image.url" >
+        </div>
+        {{message}} - {{image.selected}}
+        </div>
+        </div>      
+      </div>
+    </div>
+    <script src="app.js"></script>
+
+  </body>
+</html>
